@@ -1,0 +1,836 @@
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-repeat: repeat;
+    background-size: 30%;
+}
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5em;
+    background-color: black;
+    border-bottom: 1px solid #F0EAD8;
+    z-index: 100;
+}
+#header-img {
+    position: fixed;
+    height: 2.7em;
+    margin-left: 1.5em;
+    padding: 1.35em;
+}
+/*
+=============== BOTONERA NUEVA ===============
+*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    background-color:#706c58;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.1s;
+}
+.sidenav a:hover {
+    color: #413e32;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-right: 10px;
+}
+.main {
+    transition: margin-right .4s;
+    color: #ded6c0;
+    padding: 0.75em 95%;
+    font-size: 30px;
+    cursor: pointer;
+    right: 0px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#logo-svg {
+    display: block;
+    position: relative;
+    top: 150px;
+    width: 300px;
+    margin: auto;
+}
+#botella-img {
+    display: block;
+    position: relative;
+    top: 220px;
+    width: 500px;
+    margin: auto;
+    z-index: 50;
+}
+.contenedor-detalle {
+    position: absolute;
+    width: 100%;
+    height: 36em;
+    background-color: #F0EAD8;
+    border-radius: 3em 3em 0 0;
+    -moz-border-radius : 3em 3em 0 0;
+	-webkit-border-radius : 3em 3em 0 0;
+    z-index: 25;
+}
+.light {
+    font-weight: 300;
+}
+/* INICIO - GRILLA - Especificaciones del vino*/
+
+.grilla_placa {
+    position: relative;
+    top: 20%;
+    display: grid;
+    grid-template-columns: 48% repeat(2, 2%) 48%;
+    grid-template-rows: 4fr 4fr 1fr 1fr 2fr 1fr 2fr 1fr 7fr 1fr 1fr;
+    /*border: 1px solid red;*/
+    max-width: 50%;
+    max-height: 400px;
+    margin: auto;
+}
+.uno {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+.dos {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+}
+.tres {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.cuatro {
+    grid-column: 1 / 2;
+    grid-row: 4 / 10;
+}
+.cinco {
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
+}
+.seis {
+    grid-column: 2 / 3;
+    grid-row: 3 / 11;
+    border-right: 1px solid black;
+}
+.siete {
+    grid-column: 3 / 4;
+    grid-row: 3 / 11;
+}
+.ocho {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+.nueve {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+.diez {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+}
+.once {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+}
+.doce {
+    grid-column: 4 / 5;
+    grid-row: 7 / 8;
+}
+.trece {
+    grid-column: 4 / 5;
+    grid-row: 8 / 9;
+}
+.catorce {
+    grid-column: 4 / 5;
+    grid-row: 9 / 10;
+}
+.quince {
+    grid-column: 4 / 5;
+    grid-row: 10 / 11;
+}
+.dieciseis {
+    grid-column: 1 / 5;
+    grid-row: 11 / 12;
+    padding-top: 1em;
+}
+
+/* FIN - GRILLA - Especificaciones del vino*/
+
+/* DETALLES PARTICULARES y GRUPOS de la GRILLA */
+
+.tres, .cinco, .seis, .siete, .ocho, .quince {
+    color: transparent;
+}
+
+/* INICIO - DIVISORES y ESTILOS DE LA GRILLA */
+
+hr {
+    width: 80%;
+    border: 0.5px solid black;
+    margin: 1% 0;
+}
+.titulo-g1 {
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: black;    
+}
+.estilo-g2 {
+    font-weight: 300;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: black;
+    padding-bottom: 0.35em;    
+}
+.estilo-g4 {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: right;
+    color: black;
+    padding-right: 10px;
+}
+.textos-chicos {
+    font-weight: 300;
+    font-size: 0.85em;
+    text-align: left;
+    margin: 0;
+}
+.textos-chicos-centrados {
+    font-weight: 300;
+    font-size: 0.85em;
+    text-align: center;
+}
+.textos-medianos {
+    font-weight: 900;
+    font-size: 2em;
+    text-align: left;
+    line-height: 1.1em;
+}
+
+/* FIN - DIVISORES y ESTILOS DE LA GRILLA */
+
+/* INICIO - Sections Botella-papel y CONTACTO */
+
+.bot-papel {
+    display: block;
+    position: relative;
+    top: 650px;
+    margin: auto;
+}
+#botella-papel-logo {
+    display: inline-block;
+    position: absolute;
+    width: 24.5%;
+    padding-right: 12.5%;  
+    padding-left: 12.5%;
+}
+.contenedor-contacto {
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    height: 57.5em;
+    background-color: #F0EAD8;
+    border-radius: 3em 0 0 3em;
+    -moz-border-radius : 3em 0 0 3em;
+	-webkit-border-radius : 3em 0 0 3em;
+    z-index: 25;
+}
+.grilla-contacto {
+    display: inline-block;
+    position: relative;
+    top: 4em;
+    left: 4em;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10 1fr);
+}
+.c1 {
+    grid-column: 1;
+    grid-row: 1;
+    padding-bottom: 0.15em;    
+}
+.c2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.c3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.c4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+.c5 {
+    grid-column: 1;
+    grid-row: 5;
+    padding-bottom: 0.25em;    
+}
+.c6 {
+    grid-column: 1;
+    grid-row: 6;
+    padding-bottom: 0.15em;    
+}
+.c7 {
+    grid-column: 1;
+    grid-row: 7;
+    padding-top: 0.15em;    
+}
+.c8 {
+    grid-column: 1;
+    grid-row: 8;
+}
+.c9 {
+    grid-column: 1;
+    grid-row: 9;
+}
+.c10 {
+    grid-column: 1;
+    grid-row: 10;
+}
+
+.estilo-c1 {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: black;    
+}
+.estilo-c2 {
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: black;
+    padding-bottom: 0.45em;    
+}
+.estilo-c3 {
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: black;    
+    padding-bottom: 0.05em;    
+}
+.estilo-c4 {
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: black;    
+    padding-bottom: 0.50em;    
+}
+.estilo-c5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color:#ded6c0;  
+}
+a[href^="tel:"] {
+    color: black;
+    text-decoration: none;
+}
+a[href^="mailto:"] {
+    color: black;
+    text-decoration: none;
+}
+.estilo-c11 {
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: black;
+    padding-bottom: 0.45em;    
+}
+.rec {
+    background-color: black;
+    border: 1px solid black;
+    width: 22em;
+    height: 25px;
+    padding: 10px;
+    margin: 3px 0px;
+}
+.rec-textarea {
+    background-color: black;
+    border: 1px solid black;
+    width: 22em;
+    height: 125px;
+    padding: 10px;
+    margin: 3px 0px;
+}
+.rec::placeholder, .rec-textarea::placeholder{
+    color: #ded6c0;
+    text-align: left;
+}
+.rec:focus::placeholder, .rec-textarea:focus::placeholder {
+    color: #706c58;
+    text-align: left;
+}
+.boton-envio {
+    -webkit-appearance: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    background-color: transparent;
+    width: 20.9em;
+    height: 38px;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: left;
+    margin: 3px 0px;
+    
+}
+.boton-envio:hover {
+    background-color:#706c58;
+    border: 1px solid #706c58;
+    color: #ded6c0;
+}
+.contacto-pie {
+    display: block;
+    padding: 20px 0 0 20px;
+}
+.logo-septima-class {
+    display: inline-block;
+    width: 25%;
+    padding-right: 25px;
+}
+.logo-codorniu-class {
+    display: inline-block;
+    width: 35%;
+    margin: auto;
+}
+
+/* FIN - Sections Botella-papel y CONTACTO */
+
+/* INICIO - RESPONSIVE DE TRANSICIÓN DE LA GRILLA */
+
+@media (max-width: 1200px){
+.grilla_placa {
+    max-width: 70%;
+    }
+}
+@media (max-width: 850px){
+    .grilla_placa {
+        max-width: 80%;
+    }
+    #botella-papel-logo {
+        display: block;
+        position: relative;
+        width: 75%;
+        padding-right: 12.5%;  
+        padding-left: 12.5%;
+        padding-top: 3em;
+    }
+    .contenedor-contacto {
+        display: block;
+        position: relative;
+        width: 100%;
+        left: 0%;
+        height: 57.5em;
+        border-radius: 3em 3em 0 0;
+        -moz-border-radius : 3em 3em 0 0;
+        -webkit-border-radius : 3em 3em 0 0;
+    }
+    .grilla-contacto {
+        display: block;
+        position: relative;
+        margin: auto;
+        top: 2em;
+        left: 0em;
+        width: 75%;
+    }
+    .estilo-c1, .estilo-c2, .estilo-c3, .estilo-c4, .estilo-c5, .estilo-c11, .rec::placeholder, .rec-textarea::placeholder, .rec:focus::placeholder, .rec-textarea:focus::placeholder {
+        text-align: center;  
+    }
+    .rec {
+        width: 94%;
+    }
+    .rec-textarea {
+        width: 94%;
+    }
+    .boton-envio {
+        width: 99.75%;
+        text-align: center;
+    }
+    .contacto-pie {
+        display: block;
+        padding: 10px 0 0 0;
+    }
+    .logo-septima-class {
+        display: block;
+        width: 25%;
+        padding-bottom: 15px;
+        padding-left: 37.5%;
+    }
+    .logo-codorniu-class {
+        display: block;
+        width: 35%;
+        margin: auto;
+    }
+}
+@media (max-width: 750px){
+    .grilla_placa {
+        max-width: 92%;
+    }
+    .estilo-g4 {
+        font-weight: 300;
+        font-size: 0.95em;
+        line-height: 1.45em;
+        text-align: right;
+        color: black;
+        padding-right: 10px;
+    }
+    .bot-papel {
+        top: 600px;
+    }
+}
+
+/* FIN - RESPONSIVE DE TRANSICIÓN DE LA GRILLA */
+
+/* INICIO - RESPONSIVE GENERAL */
+
+@media (max-width: 600px){
+    header {
+        height: 4em;    
+    }
+   
+    #header-img {
+        position: absolute;
+        height: 1.9em;
+        padding: 1.1em 0em 0em 0.75em;
+        margin-left: 0.5em;
+        transition-duration: 0.2s;
+    }
+    .main {
+        padding: 0.5em 0.5em 0em 90%;
+        font-size: 30px;
+        position: relative;
+        right: 0px;
+    }
+    .container {
+        background-size: 15em;
+        transition-duration: 0.2s;
+    }
+    #logo-svg {
+        top: 100px;
+        width: 36%;
+        transition-duration: 0.2s;
+    }
+    #botella-img {
+        top: 140px;
+        width: 70%;
+        z-index: 50;
+        transition-duration: 0.2s;
+    }
+    .bot-papel {
+        top: 680px;
+    }
+    .contenedor-detalle {
+        position: absolute;
+        width: 100%;
+        top: 70em;
+        height: 45em;
+        background-color: #F0EAD8;
+        border-radius: 3em 3em 0 0;
+        -moz-border-radius : 3em 3em 0 0;
+        -webkit-border-radius : 3em 3em 0 0;
+        z-index: 25;
+    }
+/* FIN - RESPONSIVE GENERAL */
+
+/* INICIO - RESPONSIVE DE LA GRILLA de ESPECIFICACIONES */
+
+    .grilla_placa {
+        grid-template-columns: 100%;
+        max-width: 80%;
+        max-height: 300px;
+    }
+    .uno {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .dos {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+    .tres {
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+    .cuatro {
+        grid-column: 1 / 2;
+        grid-row: 4;
+    }
+    .cinco {
+        grid-column: 1 / 2;
+        grid-row: 5;
+        border-bottom: 1px solid black;
+        width: 80%;
+        margin: auto;
+        height: 10px;
+    }
+    .seis {
+        grid-column: 1 / 2;
+        grid-row: 6;
+        border-right: none;
+        height: 1px;
+    }
+    .siete {
+        grid-column: 1 / 2;
+        grid-row: 7;
+        height: 10px;
+    }
+    .ocho {
+        grid-column: 1 / 2;
+        grid-row: 6;
+        height: 1px;
+    }
+    .nueve {
+        grid-column: 1 / 2;
+        grid-row: 7;
+    }
+    .diez {
+        grid-column: 1 / 2;
+        grid-row: 8;
+        margin: -5px;
+    }
+    .once {
+        grid-column: 1 / 2;
+        grid-row: 9;
+    }
+    .doce {
+        grid-column: 1 / 2;
+        grid-row: 10;
+        margin: -5px;
+    }
+    .trece {
+        grid-column: 1 / 2;
+        grid-row: 11;
+    }
+    .catorce {
+        grid-column: 1 / 2;
+        grid-row: 12;
+        margin: -5px;
+    }
+    .quince {
+        grid-column: 1 / 2;
+        grid-row: 13;
+        margin: -5px;
+    }
+    .dieciseis {
+        grid-column: 1 / 2;
+        grid-row: 14;
+        padding-top: 0em;
+    }
+
+    hr {
+        margin: 1% auto;
+    }
+    .titulo-g1 {
+        text-align: center;
+    }
+    .estilo-g2 {
+        text-align: center;
+        padding-bottom: 0.05em;    
+    }
+    .estilo-g4 {
+        font-size: 1em;
+        line-height: 1.5em;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .textos-chicos {
+        text-align: center;
+        margin: 1%;
+    }
+    .textos-chicos-centrados {
+        text-align: center;
+    }
+    .textos-medianos {
+        text-align: center;
+    }
+}
+@media (max-width: 575px){
+    .contenedor-detalle {
+        top: 67em;
+        height: 47em;
+    }
+    #botella-papel-logo {
+        padding-top: 7em;
+    }
+}
+@media (max-width: 550px){   
+    .contenedor-detalle {
+        top: 64em;
+        height: 47em;
+    }
+    #botella-papel-logo {
+        padding-top: 0.5em;
+    }
+}
+@media (max-width: 500px){   
+    .contenedor-detalle {
+        top: 59em;
+        height: 47em;
+    }
+    .bot-papel {
+        top: 720px;
+    }
+}
+@media (max-width: 450px){
+    .contenedor-detalle {
+        position: absolute;
+        width: 100%;
+        top: 52em;
+        height: 50em;
+        background-color: #F0EAD8;
+        border-radius: 3em 3em 0 0;
+        -moz-border-radius : 3em 3em 0 0;
+        -webkit-border-radius : 3em 3em 0 0;
+        z-index: 25;
+    }
+    .grilla_placa {
+        grid-template-columns: 100%;
+        max-width: 80%;
+        max-height: 400px;
+    }
+    .titulo-g1 {
+        font-size: 38px;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .estilo-g2 {
+        text-align: center;
+        padding-bottom: 0.05em;    
+    }
+    .bot-papel {
+        top: 730px;
+    }
+}
+@media (max-width: 420px){
+    .contenedor-detalle {
+        position: absolute;
+        width: 100%;
+        top: 49em;
+        height: 50em;
+        background-color: #F0EAD8;
+        border-radius: 3em 3em 0 0;
+        z-index: 25;
+    }
+    .grilla_placa {
+        grid-template-columns: 100%;
+        max-width: 80%;
+        max-height: 400px;
+    }
+    .titulo-g1 {
+        font-size: 34px;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .estilo-g2 {
+        text-align: center;
+        padding-bottom: 0.05em;    
+    }
+    .bot-papel {
+        top: 750px;
+    }
+}
+
+@media (max-width: 375px){
+    .contenedor-detalle {
+        position: absolute;
+        width: 100%;
+        top: 44em;
+        height: 49em;
+        background-color: #F0EAD8;
+        border-radius: 2.5em 2.5em 0 0;
+        -moz-border-radius : 2.5em 2.5em 0 0;
+        -webkit-border-radius : 2.5em 2.5em 0 0;
+        z-index: 25;
+    }
+    .grilla_placa {
+        grid-template-columns: 100%;
+        max-width: 80%;
+        max-height: 350px;
+    }
+    .titulo-g1 {
+        font-size: 32px;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .estilo-g2 {
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 0.05em;    
+    }
+    .bot-papel {
+        top: 740px;
+    }
+}
+@media (max-width: 320px){
+    .contenedor-detalle {
+        position: absolute;
+        width: 100%;
+        top: 35em;
+        height: 54em;
+        background-color: #F0EAD8;
+        border-radius: 2.5em 2.5em 0 0;
+        -moz-border-radius : 2.5em 2.5em 0 0;
+        -webkit-border-radius : 2.5em 2.5em 0 0;
+        z-index: 25;
+    }
+    .grilla_placa {
+        grid-template-columns: 100%;
+        max-width: 80%;
+        max-height: 350px;
+    }
+    .titulo-g1 {
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .estilo-g2 {
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 0.05em;    
+    }
+    .bot-papel {
+        top: 790px;
+    }
+}
+/* FIN - RESPONSIVE DE LA GRILLA de ESPECIFICACIONES */

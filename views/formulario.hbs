@@ -1,0 +1,42 @@
+<div>
+    <div class="c1 estilo-c1">CONTACTO:</div>
+    <div class="c2 estilo-c2">Ruta Internacional N°7 Km. 1061, Agrelo, Mendoza.</div>
+    <div class="c3 estilo-c3"><a href="tel:080045829871">0800-4582-9871</a></div>
+    <div class="c4 estilo-c4"><a href="mailto:septimaturismo@codorniu.com">septimaturismo@codorniu.com</a></div>
+    
+    <form class="c5" id="form" method="POST">
+        <input class="estilo-c5 rec" name="nombre" id="nombre" type="text" placeholder="Tu nombre:">
+        <input class="estilo-c5 rec" name="mail" id="mail" type="email" placeholder="Tu mail:">
+        <input class="estilo-c5 rec" name="telefono" id="telefono" type="number" placeholder="Tu teléfono:">
+        <textarea class="estilo-c5 rec-textarea" name="comentarios" rows="1" cols="1" placeholder="Tu consulta:"></textarea>
+            
+            <p> {{ tipoFormulario }} </p>
+            {{#if  error }}
+                <div class="estilo-error-titulo">
+                    <p>Estos son los errores!</p>
+                </div>
+            {{#each error}}
+                <div class="estilo-error">{{this}}</div>
+            {{/each}}
+            {{/if }}
+
+        <input class="boton-envio" id="submit" type="submit" value="ENVIAR"><span><hr></span>
+    </form>
+    
+        <div class="c6 estilo-c1">SUSCRIPCIÓN:</div>
+            <div class="c7 estilo-c11">Suscribite a nuestro newsletter y recibí todas las novedades de la bodega.</div>
+            <div class="c8">    
+                <form id="form" method="POST">
+                    <input class="estilo-c5 rec" name="mail" id="mail" type="email" placeholder="Tu mail:" required>
+                    <input class="c13 boton-envio" id="submit" type="submit" value="ENVIAR"><span><hr></span>
+                </form>
+            </div>
+            <div class="contacto-pie">
+                <div class="c9 logo-septima-class">
+                    <img id="logo-septima" src="svg/logo_SCR_01.svg" alt="">
+                </div>
+                <div class="c10 logo-codorniu-class">
+                    <img id="logo-codorniu" src="svg/logo_SCR_02.svg" alt="">
+                </div>
+            </div>
+        </div>
